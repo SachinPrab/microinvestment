@@ -10,13 +10,16 @@
       background-color:white;
     }
   </style>
+  <script>
+    function getOption() {
+      document getElementById("demo").innerHTML = document.getElementById("myElement").selectedIndex;
     <body>
     <h1> <center><u> Welcome to our website! </u></center> </h1><br>
       <div align:left><u><a href = "LoginPage.html"> Log in </a></u></div>
       <div align:left><u><a href = "SignUp.html"> Sign up </a></u></div>
       <marquee behavior="alternate" direction="left" width:30% height:50%>Join the investment revolution,one click at a time.</marquee> <br>
       <p><center><b>What would you like to invest in today?</b><br>
-    <select> <label> Investments </label>
+    <select id = "myElement">
     <option> Stock investments </option>
     <option> Mutual funds </option>
     <option> Fixed Deposits (FD) </option>
